@@ -1,0 +1,97 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+.calculator{
+    background-color: rgb(17, 17, 17);
+    width: 375px;
+    border: 1px solid rgb(17, 17, 17);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.5);
+}
+input{
+    /* direction: rtl; */
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(93, 92, 92);
+    margin-inline: 2px;
+    scale: 1.5;
+    position: relative;
+    top: 5px;
+    left: 95px;
+    margin-bottom: 50px;
+    border: 2px white solid;
+    border-radius: 10px;
+    
+}
+.line{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+.line :nth-child(1){
+    background-color: rgb(252, 177, 37);
+    color: black;
+    
+}
+button{
+    font-size: large;
+    color: rgb(255, 15, 15);
+    background-color: bisque;
+    scale: 1.5;
+    padding: 20px;
+    margin-top: 5px;
+    /* margin-left: 30px; */
+    margin-bottom: 30px;
+    border: 1px solid bisque;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.allClear p{
+    position: relative;
+    /* left: 30px; */
+    font-size: 30px;
+    top: 3px;
+}
+@media screen and (max-width:500px){
+    .calculator{
+        width: 200px;
+        padding: 5px;
+    }
+    input{
+        scale: 1;
+        margin-inline: 0px;
+        left: 0px;
+        
+    }
+    .line{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    button{
+        scale: 1.6;
+        padding: 5px;
+        margin-top: 1px;
+        /* margin-inline :5px; */
+        margin-left: 0px;
+        margin-right: 0px;
+
+        
+    }
+    .allClear button{
+        scale: 1.1;
+    }
+    .allClear p{
+        font-size: 20px;
+    }
+
+    
+}
+
